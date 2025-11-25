@@ -2,7 +2,8 @@ import Hero from "./components/Hero";
 import Products from "./components/Products";
 
 export default async function Home() {
-  const json = await fetch("https://dummyjson.com/products", {
+  // const json = await fetch("https://dummyjson.com/products", {
+  const json = await fetch(`${process.env.API_DATA}/products`, {
     next: { revalidate: 120 },
   });
   const res = await json.json();

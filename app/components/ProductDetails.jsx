@@ -33,7 +33,7 @@ export default async function ProductDetailsPage({ postId }) {
               </div>
             </div>
 
-            <ChooseImage  product={product}/>
+            <ChooseImage product={product}/>
           </div>
 
 
